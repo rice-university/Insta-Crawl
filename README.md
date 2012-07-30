@@ -17,4 +17,4 @@ Python script that utilizes Google Docs and Google Voice for next level crawls.
 
 ###Notice
 - In the current way input is handled, your google account credentials will be
-echoed in the terminal.
+echoed in the terminal as you type them.
