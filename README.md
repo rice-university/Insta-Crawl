@@ -16,5 +16,5 @@ Python script that utilizes Google Docs and Google Voice for next level crawls.
     * Stop College, Location, Drink Name
 
 ###Notice
-In the current way input is handled, your google account credentials will be
+- In the current way input is handled, your google account credentials will be
 echoed in the terminal.
