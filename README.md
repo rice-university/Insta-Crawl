@@ -10,9 +10,9 @@ BeautifulSoup
 
 ###Other Required Items
 A google account with a voice account/number and google docs
-A form/spreadsheet for participants on google docs in this format: 
+A form/spreadsheet for participants on google docs in this format:  
     Timestamp (google adds this automatically), Name, and phone number
-A form/spreadsheet for hosts in this format: 
+A form/spreadsheet for hosts in this format:  
     Stop College, Location, Drink Name
 
 ###Notice
