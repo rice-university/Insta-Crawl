@@ -5,6 +5,7 @@ import gdata.docs
 import gdata.docs.service
 import gdata.spreadsheet.service
 import re, os
+import getpass
 from bs4 import BeautifulSoup
 
 def start_crawl():
@@ -22,7 +23,7 @@ def start_crawl():
         Happy crawling!
     """
     email = raw_input('What is your Google Account?') # voice and docs must be same acct
-    password = raw_input('What is your Google Password')
+    password = getpass.getpass('What is your Google Password')
     hosts_name = raw_input('What is the name of your GoogleDocs Host Spreadsheet')
     participants_name = raw_input('What is the name of your GoogleDocs Participants Form')
     _organizer_number = raw_input('What is the phone number of the crawl organizer? (10 digit number)')
@@ -82,7 +83,7 @@ def _start_poll(organizer_number, hosts, participants, num_stops, voice):
         for msg in _extractsms(voice.sms.html):
             if msg['from']==organizer_number:
                 count+=1
-        print 'Current Stop Number: '+str(count)
+        print('Current Stop Number: '+str(count))
         if count==int(num_stops)+1:
             for participant in participants:
                 text = 'Hello, '+participant[0][1]+' the crawl is over!'
